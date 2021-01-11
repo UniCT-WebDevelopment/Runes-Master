@@ -1,7 +1,7 @@
 # Runes Master
 A simple tool for managing runes pages in the famous game of **League of Legends**.
 
-![App Preview](preview.png)
+![App Preview](previews/app.png)
 
 # How does it work?
 
