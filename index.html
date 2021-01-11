@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+	<title>Runes Master</title>
+
+	<link rel="stylesheet" href="css/shared_style.css">
+	<link rel="stylesheet" href="css/window_style.css">
+	<link rel="stylesheet" href="css/content_style.css">
+</head>
+<body>
+    <div id="background"></div>
+	<section id="app-title" class="bold-text">Runes Master
+		<div id="app-controls-container">
+			<img id="button-minimize" class="app-control-button" src="res/minus.svg"><img id="button-quit" class="app-control-button" src="res/close.svg">
+		</div>
+	</section>
+	<section id="app-content">
+		<table>
+			<tr>
+				<td id="summoner-data"> 
+					<table id="summoner-container" class="transp-background semi-round-item">
+						<tr>
+							<th>
+								<img id="summoner-icon" class="round-item shadow-item" width="100" height="100" src="res/default_icon.jpg">
+							</th>
+							<td>
+								<p id="summoner-name" class="regular-text">Waiting for client...</p>
+								<p id="summoner-level" class="regular-text">Level:</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td rowspan="2" id="pages-data">
+					<table class="transp-background top-semi-round-item bot-semi-sharp-item">
+						<tr>
+							<td id="search"> 
+								<input id="search-bar" class="small-shadow-item regular-text semi-sharp-item" placeholder="<Champion> <Lane>" disabled spellcheck="false" type="search">
+							</td>
+							<td id="message">
+								<span class="regular-text"></span>
+							</td>
+							<td id="pages-data-controls">
+								<div><div id="button-export-saves" class="small-shadow-item round-item" title="Export"></div></div>
+								<div style="margin-right: 10px;"><div id="button-import-saves" class="small-shadow-item round-item" title="Import"></div></div>
+								<div><div id="button-save-page" class="small-shadow-item round-item" title="Save Current Page"></div></div>
+							</td>
+						</tr>
+						<tr id="pages">
+							<td colspan="3">
+								<ul id="pages-list" class="transp-background semi-sharp-item">
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td id="pick-data">
+					<div>
+						<img id="picked-champion-icon" class="big-shadow-item" width="150" height="150" src="res/default_icon.jpg">
+						<div id="picked-lane-icon-background" class="lane-icon-background">
+							<img id="picked-lane-icon" class="lane-icon" src="res/icon-position-fill-blue.png">
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<div id="tooltip"">
+		<div>
+			<div class="perk-icon-background"><img style="padding: 2px" id="tooltip-perk-10" class="perk-icon" width="18" height="18" src="res/default_black.jpg"></div><div style="margin: 0 5px" class="perk-icon-background"><img id="tooltip-perk-4" class="perk-icon" width="28" height="28" src="res/default_black.jpg"></div><div class="perk-icon-background"><img id="tooltip-perk-5" class="perk-icon" width="28" height="28" src="res/default_black.jpg"></div><div style="margin: 0 2px 0 11px" class="perk-icon-background"><img id="tooltip-perk-6" class="perk-icon" width="22" height="22" src="res/default_black.jpg"></div><div class="perk-icon-background"><img id="tooltip-perk-7" class="perk-icon" width="22" height="22" src="res/default_black.jpg"></div><div class="perk-icon-background"><img id="tooltip-perk-8" class="perk-icon" width="22" height="22" src="res/default_black.jpg"></div>
+			<br>
+			<div class="perk-icon-background"><img style="padding: 2px" id="tooltip-perk-9" class="perk-icon" width="18" height="18" src="res/default_black.jpg"></div><div class="perk-icon-background"><img id="tooltip-perk-0" class="perk-icon" width="34" height="34" src="res/default_black.jpg"></div><div class="perk-icon-background"><img id="tooltip-perk-1" class="perk-icon" width="28" height="28" src="res/default_black.jpg"></div><div class="perk-icon-background"><img id="tooltip-perk-2" class="perk-icon" width="28" height="28" src="res/default_black.jpg"></div><div class="perk-icon-background"><img id="tooltip-perk-3" class="perk-icon" width="28" height="28" src="res/default_black.jpg"></div>
+		</div>
+		<div class="arrow-down">
+		</div>
+	</div>
+	<script src="scripts/renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(77, 137, 216); 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(98, 149, 216); 
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#background {
+    content: "";
+    z-index: -1;
+    position: fixed;
+    left: -5px;
+    top: -5px;
+    padding: 5px;
+    background-color: black;
+    background-image: url("../res/champion-pick-wallpaper.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 50px 20px rgba(0,0,0,0.9);
+}
+
+
+.dropdown {
+    width: 260px;
+    min-height: 90px;
+    padding: 5px;
+}
+
+
+.dropdown-content {
+    max-height: 0px;
+    margin-top: 0px;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+    transition: max-height 0.3s, margin-top 0.3s;
+}
+
+.dropdown:hover .dropdown-content {
+    margin-top: 10px;
+    max-height: 150px;
+}
+
+.dropdown-content > div {
+    scroll-snap-align: start;
+    cursor: pointer;
+}
+
+.dropdown-content > div:hover {
+    background-color: rgba(210, 210, 210, 0.5);
+}
+
+#champion-name, #lane-name {
+    font-size: 18px;
+}
+
+.lane-icon-background {
+    position: unset;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 4px 6px;
+    padding: 16px;
+}
+
+.lane-icon {
+    width: 50px;
+}
+
+.name {
+    text-shadow: -2px 2px 4px black, 0 0 4px black;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.content-champion-icon {
+    background-image: url("../res/default_icon.jpg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    margin: 4px 6px;
+    border-radius: 20%;
+    background-size: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.content-lane-icon-background {
+    background-image: url("../res/button-bg-blue.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 4px 6px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.content-lane-icon {
+    display: block;
+    width: 22px;
+}
+
+#btn-confirm {
+    width: 100%;
+    height: 32px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+}

@@ -1,0 +1,82 @@
+body {
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#background {
+    content: "";
+    z-index: -1;
+    position: fixed;
+    left: -5px;
+    top: -5px;
+    padding: 5px;
+    background-image: url("../res/wallpaper.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 50px 20px rgba(0,0,0,0.9);
+}
+
+input[type=search]::-webkit-search-cancel-button {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(216, 132, 77); 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(216, 145, 98); 
+}
+
+#app-title {
+    -webkit-app-region: drag;
+    color: #F8B229;
+    text-shadow: 0 0 6px #EA4630;
+    padding: 10px 50px 6px 10px;
+    border-bottom: 1px solid #F8B229;
+}
+
+#app-controls-container {
+    -webkit-app-region: no-drag;
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+
+.app-control-button {
+    height: 14px;
+    padding: 12px;
+    padding-bottom: 11px;
+}
+
+#button-quit:hover {
+    background-color: #f443364b;
+}
+
+#button-quit:active {
+    background-color: #f443366b;
+}
+
+#button-minimize:hover {
+    background-color: #ffc1074b;
+}
+
+#button-minimize:active {
+    background-color: #ffc1076b;
+}
