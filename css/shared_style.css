@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "League Font Regular";
+    src: url("../fonts/Friz\ Quadrata\ Regular.ttf");
+}
+@font-face {
+    font-family: "League Font Bold";
+    src: url("../fonts/Friz\ Quadrata\ Bold.otf");
+}
+
+* {
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+html {
+    height: 100%;
+}
+
+.bold-text {
+    font-family: "League Font Bold";
+}
+
+.regular-text { 
+    font-family: "League Font Regular";
+}
+
+.round-item {
+    border-radius: 50%;
+}
+.semi-round-item {
+    border-radius: 20px;
+}
+.semi-sharp-item {
+    border-radius: 10px;
+}
+.sharp-item {
+    border-radius: 5px;
+}
+.top-semi-round-item {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.bot-semi-sharp-item {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.small-shadow-item {
+    filter: drop-shadow(-2px 2px 2px black);
+}
+
+.shadow-item {
+    box-shadow: -4px 4px 6px 1px black;
+}
+
+.big-shadow-item {
+    box-shadow: -6px 6px 10px 1px black;
+}
+
+.transp-background {
+    background-color: rgba(210, 210, 210, 0.2);
+}
+.semi-transp-background {
+    background-color: rgba(210, 210, 210, 0.5);
+}
+
+.small-champion-icon {
+    background-image: url("../res/default_icon.jpg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    margin: 4px 6px;
+    border-radius: 20%;
+    background-size: 90px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+.lane-icon-background {
+    background-image: url("../res/button-bg-blue.png");
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    padding: 8px;
+    margin-top: -8px;
+    margin-right: -8px;
+    right: 0;
+    top: 0;
+}
+
+.lane-icon {
+    display: block;
+    width: 20px;
+}

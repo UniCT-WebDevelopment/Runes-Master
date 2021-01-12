@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <title>Runes Master - Saving Options - Confirmation Required</title>
+    
+	<link rel="stylesheet" href="css/shared_style.css">
+	<link rel="stylesheet" href="css/champion-pick.css">
+</head>
+<body>
+    <div id="background"></div>
+    <table style="flex:1">
+        <tr style="vertical-align: top;">
+            <td id="champion-select">
+                <div id="champions-dropdown" class="dropdown semi-transp-background sharp-item">
+                    <div>
+                        <span id="champion" class="small-champion-icon"></span>
+                        <span id="champion-name" class="name regular-text"></span>
+                    </div>
+                    <div class="dropdown-content transp-background sharp-item"></div>
+                </div>
+            </td>
+            <td id="lane-select">
+                <div id="lanes-dropdown" class="dropdown semi-transp-background sharp-item">
+                    <div>
+                        <span class="lane-icon-background">
+                            <img id="lane" class="lane-icon" src="res/icon-position-fill-blue.png">
+                        </span>
+                        <span id="lane-name" class="name regular-text"></span>
+                    </div>
+                    <div class="dropdown-content transp-background sharp-item">
+                        <div lane="fill" class='btn-lane sharp-item'>
+                            <span class="content-lane-icon-background">
+                                <img class="content-lane-icon" src="res/icon-position-fill-blue.png">
+                            </span>
+                            <span class="name regular-text">Any Lane</span>
+                        </div>
+                        <div lane="top" class='btn-lane sharp-item'>
+                            <span class="content-lane-icon-background">
+                                <img class="content-lane-icon" src="res/icon-position-top-blue.png">
+                            </span>
+                            <span class="name regular-text">Top</span>
+                        </div>
+                        <div lane="middle" class='btn-lane sharp-item'>
+                            <span class="content-lane-icon-background">
+                                <img class="content-lane-icon" src="res/icon-position-middle-blue.png">
+                            </span>
+                            <span class="name regular-text">Middle</span>
+                        </div>
+                        <div lane="jungle" class='btn-lane sharp-item'>
+                            <span class="content-lane-icon-background">
+                                <img class="content-lane-icon" src="res/icon-position-jungle-blue.png">
+                            </span>
+                            <span class="name regular-text">Jungle</span>
+                        </div>
+                        <div lane="bottom" class='btn-lane sharp-item'>
+                            <span class="content-lane-icon-background">
+                                <img class="content-lane-icon" src="res/icon-position-bottom-blue.png">
+                            </span>
+                            <span class="name regular-text">Bottom</span>
+                        </div>
+                        <div lane="utility" class='btn-lane sharp-item'>
+                            <span class="content-lane-icon-background">
+                                <img class="content-lane-icon" src="res/icon-position-utility-blue.png">
+                            </span>
+                            <span class="name regular-text">Utility</span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <input id="btn-confirm" type="button" value="Confirm">
+	<script src="scripts/champion-pick/renderer.js"></script>
+</body>
+</html>
