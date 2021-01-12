@@ -31,7 +31,7 @@ Just click ![Export Preview](previews/import.png) to import your friend's amazin
 
 ## Requirements
 
-To build the app, download or clone the repository, then download and install [NodeJs](https://nodejs.org/) and exectute the following commands on the shell
+To build the app, download or clone the repository, then download and install [NodeJs](https://nodejs.org/) and execute the following commands on the shell
 - Install [Electron](https://www.electronjs.org/) module globally
     ```cmd
     $ npm install electron -g
